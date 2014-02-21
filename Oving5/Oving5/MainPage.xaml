@@ -46,7 +46,7 @@
             -->
 
             <!--Panorama item one-->
-            <phone:PanoramaItem Header="akselerometer" LostFocus="PanoramaItem_LostFocus">
+            <phone:PanoramaItem Header="akselerometer">
                 <!--ContentPanel - place additional content here-->
                 <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
                     <Button Content="Start" Height="72" HorizontalAlignment="Left" Margin="20,10,0,0" x:Name="startButton" VerticalAlignment="Top" Width="160" Click="startButton_Click" />
@@ -57,17 +57,14 @@
                     <Line x:Name="xLine" X1="200" Y1="350" X2="300" Y2="350" Stroke="Red" StrokeThickness="4"/>
                     <Line x:Name="yLine" X1="200" Y1="350" X2="200" Y2="270" Stroke="Green" StrokeThickness="4"/>
                     <Line x:Name="zLine" X1="200" Y1="350" X2="150" Y2="400" Stroke="Blue" StrokeThickness="4"/>
-                    <TextBlock Height="30" HorizontalAlignment="Center" Margin="0,443,-48,0" x:Name="statusTextBlock" Text="Statusfelt" VerticalAlignment="Top" Width="444" />
+                    <TextBlock Height="30" HorizontalAlignment="Center" Margin="0,410,-48,0" x:Name="statusTextBlock" Text="Statusfelt" VerticalAlignment="Top" Width="444" />
+                    <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" x:Name="statusfelt2" Text="statusfelt2" VerticalAlignment="Top" Margin="0,446,0,0"/>
                 </Grid>
             </phone:PanoramaItem>
 
             <phone:PanoramaItem Header="kart">
-
                 <maps:Map x:Name="kart" HorizontalAlignment="Center" VerticalAlignment="Top" Height="466" Width="407"/>
-
             </phone:PanoramaItem>
-
-
         </phone:Panorama>
     </Grid>
 </phone:PhoneApplicationPage>
